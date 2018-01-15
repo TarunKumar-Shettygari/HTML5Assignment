@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>Straight Line</h1>
+<canvas id="line" width="200" height="0" style="border:1px solid #bef30e;background-color:#ffe300">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<h1>Diagonal</h1>
+<canvas id="diagonal" style="color:black">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("diagonal");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+
+<h1>Rectangle</h1>
+<canvas id="rectangle" width="200" height="100" style="border:1px solid #000000;background-color:#bfea34">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<h1>Square</h1>
+<canvas id="square" width="200" height="200" style="border:1px solid #000000;background-color:#ffe300">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<h1>Circle</h1>
+<canvas id="circle" style="color:black">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("circle");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.fillStyle= "red";
+ctx.fill();
+ctx.stroke();
+</script>
+
+
+</body>
+</html>
